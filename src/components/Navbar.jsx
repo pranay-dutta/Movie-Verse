@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 
 const Navbar = () => {
-  const [isLoggedIn, setLoggedIn] = useState(false);
+  const [isLoggedIn, setLoggedIn] = useState(true);
   return (
     <div className="shadow-md h-20">
       <nav className="container h-full mx-auto">
@@ -14,7 +14,7 @@ const Navbar = () => {
             <input type="text" className="border border-[#ddd] bg-slate-50 border-solid outline-none w-9/12 rounded px-2 py-1 drop-shadow-sm duration-200 focus:border-slate-500 placeholder:text-center" placeholder="📡 Search a movie or a series" />
             {
               isLoggedIn ?
-                <div className="rounded-full bg-slate-500 hover:bg-slate-800 text-white w-12 h-12 overflow-hidden cursor-pointer">
+                <div className="rounded-full bg-slate-500 hover:bg-slate-800 text-white w-10 h-10 overflow-hidden cursor-pointer">
                   <img className="w-full h-full object-cover object-center" src="https://thephotoacademy.com/storage/magazine/448/3-the-photo-academy-portrait-Yousuf-Karsh.jpeg" alt="albert-einstein" />
                 </div>
                 :
